@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>NPV</title>
+    </head>
+    <body>
+        <label for="initial-investment">Initial Investment:</label>
+        <input type="number" id="initial-investment" min="0" value="1500000">
+        <label for="sales-revenue">Sales Revenue:</label>
+        <input type="number" id="sales-revenue" min="0" value="1350000">
+        <label for="labour-materials-cost">Labour and Materials Cost:</label>
+        <input type="number" id="labour-materials-cost" min="0" value="380000">
+        <label for="electricity-cost">Electricity Cost:</label>
+        <input type="number" id="electricity-cost" min="0" value="350000">
+        <hr>
+        <label for="scrap-value">Scrap Value:</label>
+        <input type="number" id="scrap-value" min="0" value="50000">
+        <hr>
+        <label for="advertising">Advertising Cost:</label>
+        <input type="number" id="advertising" min="0" value="100000">
+        <label for="advertising-length">Years Advertising:</label>
+        <input type="number" id="advertising-length" min="0" value="2">
+        <hr>
+        <label for="sales-revenue-inflation">Sales Revenue Inflation:</label>
+        <input type="number" id="sales-revenue-inflation" min="0" value="6">
+        <label for="labour-materials-inflation">Labour and Materials Inflation:</label>
+        <input type="number" id="labour-materials-inflation" min="0" value="5">
+        <label for="electricity-inflation">Electricity Inflation:</label>
+        <input type="number" id="electricity-inflation" min="0" value="11">
+        <label for="advertising-inflation">Advertising Inflation:</label>
+        <input type="number" id="advertising-inflation" min="0" value="5">
+        <label for="general-inflation">General Inflation:</label>
+        <input type="number" id="general-inflation" min="0" value="5.5">
+        <hr>
+        <label for="working-capital">Working Capital Investment:</label>
+        <input type="number" id="working-capital" min="0" value="70000">
+        <hr>
+        <label for="corporation-tax">Corporation Tax Rate:</label>
+        <input type="number" id="corporation-tax" min="0" value="19">
+        <label for="cost-of-capital">Real Cost of Capital:</label>
+        <input type="number" id="cost-of-capital" min="0" value="9">
+        <label for="capital-allowance">Capital Allowance Percentage:</label>
+        <input type="number" id="capital-allowance" min="0" value="25">
+        <hr>
+        <label for="project-length">Length of Project:</label>
+        <input type="number" id="project-length" min="0" value="4">
+        <hr>
+        <button id="submit" onclick="Submit()">Submit</button>
+        <hr>
+        <div>The NPV of the Project Is: <span id="NPV">£0.00</span></div>
+        <hr>
+        <div id="workings-table-wrapper"></div>
+        
+        <script src="script.js"></script>
+    </body>
+</HTML>
